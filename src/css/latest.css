@@ -1,0 +1,71 @@
+.latest {
+   background-image: url('https://i.pinimg.com/736x/87/bb/e0/87bbe0c1c46350dda0c10c544bc4fea8.jpg');
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   border-radius: 25px;
+    margin-top: 30px;
+   height: 300px;
+   width: 10    0%;
+  
+
+
+
+
+   h2{
+    color: white;
+    font-weight: 400;
+    padding-top: 30px;
+    padding-left: 30px;
+   }
+
+
+   p{
+    color: white;
+    font-size: 10px;
+    padding-left: 30px;
+    ;
+   
+    
+   }
+
+
+}
+
+.book-now{
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: #e50914; /* vibrant red */
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  border-radius: 20px;
+  transform: skew(-10deg);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.book-now:hover {
+  transform: skew(-10deg) scale(1.05);
+  box-shadow: 3px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+.left-btn, .right-btn {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  margin: 0 5px;
+  transition: background-color 0.3s ease;
+}
+
+.left-btn:hover, .right-btn:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}

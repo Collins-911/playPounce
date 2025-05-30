@@ -1,18 +1,19 @@
-import React from 'react'; // Don't forget to import React
+import React from 'react';
 import '../css/home.css';
 import Sidebar from './sidebar';
-import Top  from './top';
+import Top from './top';
+import Latest from './latest';
 
-
-export default function Home() { // Capitalize function names for React components
+export default function Home() {
   return (
     <div className="home-container">
-        <div className="container">
-            <Top/>
-            <Sidebar/>
-
-        </div>
-     
-     </div>
-  )
+      <div className="sidebar-container">
+        <Sidebar />
+      </div>
+      <div className="top-container">
+        <Top />
+        <Latest />
+      </div>
+    </div>
+  );
 }

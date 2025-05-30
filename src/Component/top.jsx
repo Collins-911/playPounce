@@ -30,13 +30,7 @@ export default function Top() {
               <strong>Alex Ryan</strong>
               <span>@alexgg</span>
             </div>
-            <select name="cars" id="cars" className="profile-select" defaultValue="">
-              <option value="" disabled>Select a car</option>
-              <option value="volvo">Volvo</option>
-              <option value="saab">Saab</option>
-              <option value="mercedes">Mercedes</option>
-              <option value="audi">Audi</option>
-            </select>
+           
           </div>
         </div>
 

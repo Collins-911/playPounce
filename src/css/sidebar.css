@@ -1,0 +1,108 @@
+.sidebar {
+  width: 17%;
+  height: 97vh;
+  margin-top: 15px;
+  margin-left: 15px;
+  border-radius: 25px;
+  padding: 20px;
+  padding-top: 30px;
+  background: rgba(30, 30, 47, 0.7);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+  color: #fff;
+}
+
+.sidebar ul.menu {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.sidebar ul.menu li {
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sidebar ul.menu li::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  transition: left 0.3s ease;
+  z-index: -1;
+}
+
+.sidebar ul.menu li:hover::before {
+  left: 0;
+}
+
+.sidebar ul.menu li:hover {
+  color: #a0ffa0;
+  transform: translateX(5px);
+}
+
+.online-friends ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.friend {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+  padding: 8px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+.friend img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.friend .name {
+  color: #fff;
+  font-size: 14px;
+}
+
+.status {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.status.online {
+  background-color: #00ff6a;
+}
+
+.status.idle {
+  background-color: #ffbe00;
+}
+
+.status.dnd {
+  background-color: #ff3c3c;
+}
+
+.status.offline {
+  background-color: #666;
+}
+
+.friend:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: scale(1.02);
+}

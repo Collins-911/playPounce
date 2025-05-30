@@ -1,0 +1,135 @@
+.top {
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  width: 80%;
+  height: 60px;
+  background: rgba(30, 30, 47, 0.7);
+  border-radius: 25px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  color: #fff;
+}
+
+.search-wrapper {
+  position: relative;
+  width: 300px;
+  height: 40px;
+}
+
+.search-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #aaa;
+  font-size: 14px;
+}
+
+.search-input {
+  width: 100%;
+  height: 40px;
+  padding: 0 10px 0 35px;
+  border: none;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  color: #fff;
+  outline: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Notification & Settings Icons */
+.notification,
+.settings {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.icon {
+  font-size: 18px;
+  color: #fff;
+}
+
+/* Profile Section */
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+ background: rgba(255, 255, 255, 0.1);
+  border-radius: 25px;
+  width: 190px;
+}
+
+
+
+.avatar-wrapper img {
+  width: 40px;
+  height: 40px;
+ 
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.status-dot {
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+  width: 10px;
+  height: 10px;
+  background-color: limegreen;
+  border: 2px solid #1e1e2f;
+  border-radius: 50%;
+}
+
+/* Profile Text & Dropdown */
+.info-select {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.name {
+  display: flex !important;
+  flex-direction: column;
+  line-height: 8px;
+  gap: 8px;
+  font-size: 12px;
+  color: #fff;
+  align-items: center;
+}
+
+.name span {
+  color: #aaa;
+  font-size: 11px;  
+  left: 0;
+  position: relative;
+}
+
+.profile-select {
+  font-size: 11px;
+  padding: 4px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  outline: none;
+}

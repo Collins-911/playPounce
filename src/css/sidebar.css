@@ -1,8 +1,8 @@
 .sidebar {
-  width: 17%;
-  height: 97vh;
-  margin-top: 15px;
-  margin-left: 15px;
+  width: 90%;
+  margin-right: 10px;
+  height: 95vh;
+  margin: 0 auto;
   border-radius: 25px;
   padding: 20px;
   padding-top: 30px;

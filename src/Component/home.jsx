@@ -1,19 +1,31 @@
-import React from 'react';
-import '../css/home.css';
-import Sidebar from './sidebar';
-import Top from './top';
-import Latest from './latest';
-
+import { useNavigate } from "react-router-dom";
 export default function Home() {
+
+   const navigate = useNavigate();
+
+  const play = () => {
+    navigate("/entry"); 
+  };
+
   return (
-    <div className="home-container">
-      <div className="sidebar-container">
-        <Sidebar />
+    <>
+      <div className="containerHome">
+        <div className="header">
+          <h1>
+            <span className="F">F</span>
+            <span className="U">U</span>
+            <span className="N">N</span>
+            <span className="G">G</span>
+            <span className="R">R</span>
+            <span className="I">I</span>
+            <span className="D">D</span>
+          </h1>
+        </div>
+
+        <div className="play-button" onClick={play}>
+          <div className="play-icon"></div>
+        </div>
       </div>
-      <div className="top-container">
-        <Top />
-        <Latest />
-      </div>
-    </div>
+    </>
   );
 }

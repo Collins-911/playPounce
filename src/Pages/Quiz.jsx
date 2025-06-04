@@ -1,6 +1,13 @@
 import '../css/quiz.css';
+import { useNavigate } from 'react-router-dom';
 
 export default function Quiz() {
+
+  const navigate = useNavigate();
+  const easy = () => {
+    navigate("/quizEasy")
+  }
+
   return (
     <div className="containerQuiz">
       <div className="headerQuiz">
@@ -8,7 +15,7 @@ export default function Quiz() {
       </div>
 
       <div className="Quizflex">
-        <div className="itemQuiz">
+        <div className="itemQuiz" onClick={easy}>
           <h2>Easy</h2>
         </div>
         <div className="itemQuiz">
@@ -20,4 +27,4 @@ export default function Quiz() {
       </div>
     </div>
   );
-}
+} 

@@ -5,6 +5,7 @@ import Entry from './Pages/Entry.jsx';
 import Home from './Component/home.jsx';
 import Gamehub from './Pages/Gamehub.jsx';
 import Quiz from './Pages/Quiz.jsx';
+import Quizeasy from './Pages/Quiz_easy.jsx'
 import './css/home.css';
 
 createRoot(document.getElementById('root')).render(
@@ -15,6 +16,7 @@ createRoot(document.getElementById('root')).render(
             <Route path="/entry" element={<Entry />} />
             <Route path="/gamehub" element={<Gamehub />} />
              <Route path="/quiz" element={<Quiz/>} />
+              <Route path="/quizEasy" element={<Quizeasy/>} />
       </Routes>
     </BrowserRouter>
   </StrictMode>
